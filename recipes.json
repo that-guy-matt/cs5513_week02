@@ -1,0 +1,61 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Beef Stir Fry",
+      "ingredients": [
+        "1 lb beef sirloin, sliced thin",
+        "2 cups mixed vegetables (broccoli, bell pepper, carrots)",
+        "3 tbsp soy sauce",
+        "2 tbsp sesame oil",
+        "2 cloves garlic, minced"
+      ],
+      "instructions": [
+        "Heat sesame oil in a large pan.",
+        "Add beef and cook until browned.",
+        "Add vegetables and stir fry for 5 minutes.",
+        "Pour in soy sauce and garlic, stir well.",
+        "Serve hot over rice."
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Schnitzel",
+      "ingredients": [
+        "4 boneless pork or chicken cutlets",
+        "1 cup breadcrumbs",
+        "2 eggs, beaten",
+        "1/2 cup flour",
+        "Salt and pepper to taste",
+        "Oil for frying"
+      ],
+      "instructions": [
+        "Season cutlets with salt and pepper.",
+        "Coat each cutlet in flour, dip in beaten egg, then coat with breadcrumbs.",
+        "Heat oil in a skillet over medium-high heat.",
+        "Fry schnitzels until golden brown on both sides.",
+        "Drain on paper towels and serve with lemon wedges."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Mediterranean Salad",
+      "ingredients": [
+        "2 cups chopped romaine lettuce",
+        "1 cup cherry tomatoes, halved",
+        "1 cucumber, diced",
+        "1/2 cup Kalamata olives",
+        "1/2 cup feta cheese, crumbled",
+        "2 tbsp olive oil",
+        "1 tbsp red wine vinegar",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "In a large bowl, combine lettuce, tomatoes, cucumber, olives, and feta.",
+        "Whisk together olive oil, red wine vinegar, salt, and pepper.",
+        "Drizzle dressing over salad and toss to coat.",
+        "Serve fresh."
+      ]
+    }
+  ]
+}
