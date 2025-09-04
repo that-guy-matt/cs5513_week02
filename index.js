@@ -5,9 +5,9 @@ const port = 8080;
 
 const requestListener = function(req, res){
     //TODO change this to json, finish rendering json recipes to recipes page
-    res.setHeader("Content-Type", "text/html; charset=UTF-8");
     switch(req.url){
         case '/':
+            res.setHeader("Content-Type", "text/html; charset=UTF-8");
             res.writeHead(200);
             fs.readFile(__dirname + "/recipes.html")
                 .then(
@@ -16,10 +16,10 @@ const requestListener = function(req, res){
                     }
                 )
             break;
-        
         default:
+            res.setHeader("Content-Type", "application/json; charset=UTF-8");
             res.writeHead(200);
-            fs.readFile(__dirname + "/recipes.html")
+            fs.readFile(__dirname + "/recipes.json")
                 .then(
                     recipes => {
                         res.end(recipes);

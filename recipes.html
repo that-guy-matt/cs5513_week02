@@ -1,7 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
     <body>
-        <p>hello world!</p>
+        <div id="app">
+
+        </div>
+        <script data-type="module" data-presets="react" type="text/babel">
+            "use strict";
+
+            import React from 'https://cdn.jsdelivr.net/npm/react@19.1.1/+esm';
+            import { createRoot } from 'https://cdn.jsdelivr.net/npm/react-dom@19.1.1/client/+esm';
+            
+            function RecipeList(props){
+                return <div>
+                        {
+                            props.list.map(
+                                (item, index) => (
+                                    <div key="id">
+                                        <h2>{item.title}</h2>
+                                        <ol>
+                                            <li>{item.ingredients}</li>
+                                        </ol>
+                                        <ol>
+                                            <li>{item.instructions}</li>
+                                        </ol>
+                                    </div> 
+                                )  
+                            )
+                        } 
+                    </div>
+            }
+            $.getJSON(
+                "x",
+                function(jsonFromJquery){
+                    const myRecipeElement = document.getElementById('app');
+                    const root = createRoot(myRecipeElement);
+                    root.render(
+                        <RecipeList list={jsonFromJquery.recipes} />
+                    )
+                }
+            )
+        </script>
     </body>
 </html>
