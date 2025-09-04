@@ -22,10 +22,10 @@
                                     <div key="id">
                                         <h2>{item.title}</h2>
                                         <ol>
-                                            <li>{item.ingredients}</li>
+                                            {item.ingredients.map((ingredient, index) => <li key={index}>{ingredient}</li>)}
                                         </ol>
                                         <ol>
-                                            <li>{item.instructions}</li>
+                                            {item.instructions.map((instruction, index) => <li key={index}>{instruction}</li>)}
                                         </ol>
                                     </div> 
                                 )  
